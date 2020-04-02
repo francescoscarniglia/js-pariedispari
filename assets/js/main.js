@@ -10,7 +10,7 @@ console.log(parolaReverse);
 if(parolaUtente.charAt() == parolaReverse.charAt()) {
   console.log('Parola palidroma');
 }else{
-  console.log('Parola non palindroma');
+  console.log('Parola non palidroma');
 }
 
 // I° metodo
