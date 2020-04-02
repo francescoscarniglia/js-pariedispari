@@ -1,17 +1,13 @@
 // Palidroma:
 // Chiedere all’utente di inserire una parola
 var btnConfermaParola = document.getElementById('conferma-parola');
-var btnConfermaNome = document.getElementById('conferma-nome');
 
-btnConfermaNome.addEventListener('click',
+
+btnConfermaParola.addEventListener('click',
 function(){
   var nomeUser = document.getElementById("name-user").value;
   document.getElementById('saluto-utente').innerHTML = 'ciao'+ ' ' + nomeUser;
   console.log(nomeUser);
-});
-
-btnConfermaParola.addEventListener('click',
-function(){
   var parolaUser = document.getElementById("parola-user").value;
   var parolaReverse = invertiCaratteri(parolaUser);
   if(parolaUser.charAt() == parolaReverse.charAt()) {
@@ -34,9 +30,6 @@ function(){
 // }else{
 //   console.log('Parola non palidroma');
 // }
-
-
-
 
 // I° metodo
 // function invertiCaratteri(word) {
