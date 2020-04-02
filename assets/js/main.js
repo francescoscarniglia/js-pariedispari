@@ -28,11 +28,19 @@ function(){
 // console.log(parolaReverse);
 // Creare una funzione per capire se la parola inserita
 // è palindroma
+<<<<<<< HEAD
 // if(parolaUtente.charAt() == parolaReverse.charAt()) {
 //   console.log('Parola palidroma');
 // }else{
 //   console.log('Parola non palidroma');
 // }
+=======
+if(parolaUtente.charAt() == parolaReverse.charAt()) {
+  console.log('Parola palidroma');
+}else{
+  console.log('Parola non palidroma');
+}
+>>>>>>> master
 
 // I° metodo
 // function invertiCaratteri(word) {
