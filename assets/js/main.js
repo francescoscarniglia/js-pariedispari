@@ -7,6 +7,11 @@ console.log(parolaUtente);
 console.log(parolaReverse);
 // Creare una funzione per capire se la parola inserita
 // è palindroma
+if(parolaUtente.charAt(0) == parolaReverse.charAt(0)) {
+  console.log('Parola palidroma');
+}else{
+  console.log('Parola non palindroma');
+}
 
 // I° metodo
 // function invertiCaratteri(word) {
@@ -22,6 +27,7 @@ function invertiCaratteri(word) {
   var reverse = word.split('').reverse().join();
   return reverse;
 }
+
 
 
 // Pari e Dispari:
