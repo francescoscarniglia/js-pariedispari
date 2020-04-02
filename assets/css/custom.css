@@ -1,3 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: sans-serif;
   background: lightblue;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.uStyled-list {
+  display: flex;
+}
+
+.uStyled-list li{
+  list-style: none;
+  padding: 12px;
+
+}
+
+.btn {
+  padding: 6px;
+  border-radius: none;
+  background: #F5F5F5;
+}
+
+.bold {
+  font-weight: bold;
 }
