@@ -22,24 +22,20 @@ function(){
     console.log('Parola non palidroma');
   }
 });
-
 // var parolaUtente = prompt('Inserisci una parola qualsiasi');
 // var parolaReverse = invertiCaratteri(parolaUtente);
 // console.log(parolaUtente);
 // console.log(parolaReverse);
 // Creare una funzione per capire se la parola inserita
 // è palindroma
+
 // if(parolaUtente.charAt() == parolaReverse.charAt()) {
 //   console.log('Parola palidroma');
 // }else{
 //   console.log('Parola non palidroma');
 // }
 
-if(parolaUtente.charAt() == parolaReverse.charAt()) {
-  console.log('Parola palidroma');
-}else{
-  console.log('Parola non palidroma');
-}
+
 
 
 // I° metodo
@@ -59,17 +55,9 @@ function invertiCaratteri(word) {
 
 
 // Pari e Dispari:
-var btnConfermaNome = document.getElementById('conferma-nome');
-
 
 
 // L’utente sceglie pari o dispari e un numero da 1 a 5.
-
-btnConfermaNome.addEventListener('click',
-function(){
-  var nameUser = document.getElementById("name-user").value;
-  console.log(nameUser);
-});
 
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer
