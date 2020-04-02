@@ -1,9 +1,27 @@
-console.log('Js ok');
-
 // Palidroma:
 // Chiedere all’utente di inserire una parola
+
+var parolaUtente = prompt('Inserisci una parola qualsiasi');
+var parolaReverse = invertiCaratteri(parolaUtente);
+console.log(parolaUtente);
+console.log(parolaReverse);
 // Creare una funzione per capire se la parola inserita
 // è palindroma
+
+// I° metodo
+// function invertiCaratteri(word) {
+//       var reverse= ' ';
+//       for(var i = word.length -1; i >= 0; i--) {
+//         reverse += word [i];
+//       }
+//       return reverse;
+// }
+
+// II° metodo
+function invertiCaratteri(word) {
+  var reverse = word.split('').reverse().join();
+  return reverse;
+}
 
 
 // Pari e Dispari:
