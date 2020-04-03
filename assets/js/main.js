@@ -1,4 +1,4 @@
-// Palidroma:
+// palindroma:
 // Chiedere all’utente di inserire una parola
 var btnConfermaParola = document.getElementById('conferma-parola');
 
@@ -11,11 +11,11 @@ function(){
   var parolaUser = document.getElementById("parola-user").value;
   var parolaReverse = invertiCaratteri(parolaUser);
   if(parolaUser.charAt() == parolaReverse.charAt()) {
-    document.getElementById('conferma-palidroma').innerHTML = '...la parola che hai inserito è una parola polindroma'
-    console.log('una parola palidroma');
+    document.getElementById('conferma-palindroma').innerHTML = '...la parola che hai inserito è una parola polindroma'
+    console.log('una parola palindroma');
   }else{
-    document.getElementById('conferma-palidroma').innerHTML = '...la parola che hai inserito non è una parola polindroma'
-    console.log('Parola non palidroma');
+    document.getElementById('conferma-palindroma').innerHTML = '...la parola che hai inserito non è una parola polindroma'
+    console.log('Parola non palindroma');
   }
 });
 // var parolaUtente = prompt('Inserisci una parola qualsiasi');
@@ -26,9 +26,9 @@ function(){
 // è palindroma
 
 // if(parolaUtente.charAt() == parolaReverse.charAt()) {
-//   console.log('Parola palidroma');
+//   console.log('Parola palindroma');
 // }else{
-//   console.log('Parola non palidroma');
+//   console.log('Parola non palindroma');
 // }
 
 // I° metodo
@@ -64,19 +64,27 @@ startPlay.addEventListener('click',
     document.getElementById('numero-Utente').innerHTML = okPlay;
     // Sommiamo i due numeri
     var sumRes = sum(+okPlay, +generaNumPc);
-    console.log(okPlay,  generaNumPc);
     console.log(sumRes);
+
+    // if(isPariPc == isPari(generaNumPc ){
+    //   console.log('il numero del pc è pari');
+    // }else{console.log('ciao');}
 });
 
 var generaNumPc = numeroRandom(1,5);
 console.log(generaNumPc);
-
 function numeroRandom(min, max) {
    var numeroPc = Math.floor(Math.random()* (max - min + 1)) + min;
    return numeroPc;
 }
 
+function isPari(a) {
+  if(a % 2 === 0) {
+    return true;
+  }
 
+  return false;
+}
 
 function sum(a, b) {
   return a + b;
