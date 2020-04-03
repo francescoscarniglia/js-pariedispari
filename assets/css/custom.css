@@ -34,3 +34,18 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.circle {
+    font-size: 20px;
+    padding: 12px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+
+}

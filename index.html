@@ -10,7 +10,7 @@
 <body>
 
   <div id="app">
-    <h2><strong>Js-Polindroma</strong> | Francesco Scarniglia</h2>
+    <h2><strong>Js-Polindroma</strong></h2>
     <ul class="uStyled-list">
       <li>
         <span>il tuo nome: </span><input type="text" id="name-user">
@@ -23,17 +23,46 @@
       <li></li>
       <li></li>
     </ul>
-    <div id="col-12">
+
       <ul class="uStyled-list">
-        <li>
-          <!-- <span>La parola che hai inserito &egrave;:</span><span id="conferma-palidroma"></span> -->
-        </li>
         <li>
           <span class="bold" id="saluto-utente"></span>
           <span class="bold" id="conferma-palidroma"></span>
         </li>
       </ul>
-    </div>
+
+    <h2><strong>Js-Pari e dispari</strong></h2>
+      <ul class="uStyled-list">
+        <li>
+        <button class="btn" id="btnPari" value="pari"> Numero pari</button>
+        <span>o</span>
+        <button class="btn" id="btnDispari" value="dispari"> Numero dispari</button>
+        </li>
+        <li>
+          <span>Scegli un numero <small>(1-5)</small> :</span> <input type="number" id="number-type" min="1" max="5">
+        </li>
+        <li>
+        <button class="btn" id="start-play"> Gioca</button>
+        </li>
+      </ul>
+
+      <ul class="uStyled-list">
+        <li>
+          <span class="bold">Il numero che hai scelto: </span><span class="bold circle" id="numero-Utente"></span>
+        </li>
+        <li>
+          <span class="bold">Numero random pc: </span><span id="randomPc" class="bold circle"></span>
+        </li>
+      </ul>
+
+      <ul class="uStyled-list">
+        <li>
+          <h2 class="bold" id="vincitore">Hai vinto</h2>
+        </li>
+      </ul>
+
+
+
   </div>
 
 <script type="text/javascript" src="assets/js/main.js">

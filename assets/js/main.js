@@ -48,13 +48,26 @@ function invertiCaratteri(word) {
 
 
 // Pari e Dispari:
-
-
 // L’utente sceglie pari o dispari e un numero da 1 a 5.
+
+var startPlay = document.getElementById('start-play');
 
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer
 // (usando una funzione).
+// var numeroUtente = document.getElementById('numero-Utente');
+
+startPlay.addEventListener('click',
+  function(){
+    var okPlay = document.getElementById('number-type').value;
+    document.getElementById('randomPc').innerHTML = generaNumPc;
+    document.getElementById('numero-Utente').innerHTML = okPlay;
+    // Sommiamo i due numeri
+    var sumRes = sum(+okPlay, +generaNumPc);
+    console.log(okPlay,  generaNumPc);
+    console.log(sumRes);
+});
+
 var generaNumPc = numeroRandom(1,5);
 console.log(generaNumPc);
 
@@ -63,7 +76,11 @@ function numeroRandom(min, max) {
    return numeroPc;
 }
 
-// Sommiamo i due numeri
+
+
+function sum(a, b) {
+  return a + b;
+}
 
 // Stabiliamo se la somma dei due numeri è pari o dispari
 // (usando una funzione)
