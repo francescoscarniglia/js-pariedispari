@@ -66,9 +66,22 @@ startPlay.addEventListener('click',
     var sumRes = sum(+okPlay, +generaNumPc);
     console.log(sumRes);
 
-    // if(isPariPc == isPari(generaNumPc ){
-    //   console.log('il numero del pc è pari');
-    // }else{console.log('ciao');}
+    if(generaNumPc < okPlay){
+      document.getElementById('vincitore').innerHTML = 'Hai vinto';
+      console.log('Hai vinto')
+    } else if(generaNumPc > okPlay) {
+      document.getElementById('vincitore').innerHTML = 'Ha vinto Computer';
+      console.log('Ha vinto il pc')
+    }else{
+      console.log('avete pareggiato');
+    }
+
+
+    if(isPari(okPlay) && isPari(generaNumPc)){
+      console.log('Entrambi sono pari!')
+    } else {
+      console.error('Almeno uno dei due numeri inseriti non è pari')
+    }
 });
 
 var generaNumPc = numeroRandom(1,5);
